@@ -1,0 +1,26 @@
+/* PRINT STYLES
+------------------------------------------------------------------------------------- */
+body { text-align: left; font-size: 12px; font-family: arial, helvetica, sans-serif; color: #000; background: #fff; }
+
+a:link { color: #333; text-decoration: underline; }
+a:visited { color: #666; text-decoration: underline; }
+
+#skip, #header, #main, #nav, #subnav, #h_main, #h_nav, #h_footer, #footer, #navigation, .backtotop { display: none; }
+
+#date_location {
+	height: 230px;
+}
+
+
+
+
+
+.h_flash, .h_search, .hide {display: none; }
+
+
+
+
+/* This is the print stylesheet to hide the Flash headlines from the browser... regular browser text headlines will now print as normal */
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed { display: none !important; width: 0; height: 0;	position: absolute;	overflow: hidden; }
+
+span.sIFR-alternate { visibility: visible !important; display: block !important; position: static !important; left: auto !important; top: auto !important; }

@@ -1,0 +1,560 @@
+/* -------------------------------------- */
+/* -------  GLOBAL ELEMENTS  ------------ */
+body,h1,h2,h3,h4,h5,h6,form,img,div,ul,li,p {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+span{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font: Arial;
+	}
+body {
+	background: url(../images/page_bg.jpg) top center #edead6 no-repeat;
+	font: 13px Arial;
+	color: #333333;
+}
+
+#container { 
+	overflow:hidden;
+
+}
+
+/* general elements */
+a:hover { text-decoration: none; }
+a, a:visited { text-decoration: underline; color: #990000; outline: none; }
+.floatleft { float: left; }
+.block { display: block; }
+.blue { color: #0099cc; }
+.orange { color: #ec870e; }
+
+.white {
+	background: #ffffff;
+}
+
+
+h2 {
+	color: #990000;
+	font: 26px Georgia;
+	margin-bottom: 15px;
+}	
+
+h3 {
+	color: #990000;
+	font: 27px Georgia;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	h2 span {
+		font-size: 15px;
+		color: #333333;
+	}
+
+#header {
+	margin-top: 36px;
+	height: 150px;
+	background: url(../images/header_bg.jpg);
+}
+	#header img {
+		display: block;
+		float: left;
+	}
+	#header a#logo {
+		color:#ffffff;
+		float: left;
+		outline: none;
+		width: 641px;
+		height: 111px;
+		text-decoration:none;
+		font-family:Georgia, "Times New Roman", serif;
+		font-weight:normal;
+		
+	}
+	#header a#logo p {
+		font-family: 'EB Garamond', Georgia, "Times New Roman", serif;
+		font-weight:bold;
+		font-size:12pt;
+		font-weight:500;
+		padding-top:30px;
+		padding-left:40px;
+		line-height:19px;
+		letter-spacing:0.3pt;
+	}
+	#header a#logo h1 { 
+		font-weight:normal;
+		padding-left:40px;
+		font-size:36px;
+		letter-spacing:-1px;
+	}
+	#header a#register_now {
+		float: right;
+		display: block;
+		height: 102px;
+		width: 221px;
+		background: url(../images/register_now.jpg) no-repeat;
+		margin-top: 9px;
+		text-indent: -99999px;
+	}
+		#header a:hover#register_now {
+			background: url(../images/register_now.jpg) no-repeat bottom right;
+		}
+		
+	#nav {
+		display: table;
+		clear: both;
+		width: 100%;
+	}
+	#nav ul {
+		margin: 0 0 0 30px;
+		padding: 0px;
+		line-height: 30px;
+		white-space: nowrap;
+		}
+		
+		#nav li {
+			list-style-type: none;
+			display: inline;
+			
+			height: 39px;
+			padding-right: 2px;
+		}
+		#nav li a {
+				
+				color: #ffffff;
+				padding: 11px 20px;
+	
+				text-align: center;
+				text-decoration: none;
+			}
+				#nav li a:hover {
+				
+				}	
+				
+
+
+	#content {
+		background: #ffffff;
+		padding: 20px;
+	}
+	
+	#main {
+		background:#ffffff;
+		padding-top:20px;
+		padding-bottom:20px;
+		overflow:hidden;
+	}
+	
+
+	#countdown_grid{width: 320px }
+	
+	#banner {
+		height:240px;
+		overflow:hidden;
+	}
+	
+	#date {
+		background: url(../images/box_bg.gif) repeat;
+		height: 240px;
+		width: 310px
+	}
+		#date .padding {
+			padding: 10px 10px;
+		}
+		#date .date_head {
+			font: 20px Georgia;
+			color: #990000;
+			display: block;
+			margin-bottom: 5px;
+		}
+		#date p {
+			line-height: 20px;
+		}
+		#date a.gweek {
+			background: url(../images/gWeek.gif) no-repeat top center;
+			display: block;
+			height: 29px;
+			text-indent: -99999px;
+			margin-top: 6px;
+		}
+		#date a.directions {
+			background: url(../images/icon_map.png) no-repeat 0px 5px;
+			display: block;
+			padding: 5px 0px 5px 25px;
+			font-size: 14px;
+			text-decoration: underline;
+			margin: 2px 0px;
+		}
+			#date a:hover.directions {
+				text-decoration: none;
+			}
+			
+	#speakers {
+		padding-top:10px;
+		font-size: 12px;
+	}
+		#speakers div {
+			margin: 0px 8px 18px 8px;
+			height: 168px;
+			float: left;
+			width: 100px;
+		}
+		#speakers div.boxsize{
+			display: none;
+			height:203px;
+			width: 240px;
+			border:none ;
+			
+			text-align: center;
+			font-size:14px;
+			line-height: 120%;
+			position: absolute;
+			background: url(../images/hover_bac.gif);
+			margin:60px 70px 70px 70px;
+			overflow:hidden;
+			
+			}
+			#speakers div a {
+				display: block;
+				text-decoration: none;
+			}
+			#speakers div img {
+				display: block;
+				border: none;
+				margin-bottom: 3px;
+			}
+			#speakers div a span {
+				display: block;
+				background: url(../images/speaker_title.gif) repeat-x top left #eae9e2;
+				padding: 7px 0px 6px 0px;
+				text-align: center;
+				margin-bottom: 1px;
+			}
+				#speakers div a:hover span {
+					background: url(../images/speaker_title.gif) repeat-x bottom left #eae9e2;
+					color: #ffffff;
+				}
+				#speakers div a strong.invited {
+					display: block;
+					height: 17px;
+					background: url(../images/i_invited.gif) no-repeat;
+					font-size: 10px;
+					text-indent: -10000px;
+				}
+				#speakers div a strong.confirmed {
+					display: block;
+					height: 17px;
+					background: url(../images/i_confirmed.gif) no-repeat;
+					font-size: 10px;
+					text-indent: -10000px;
+				}
+				
+		#speakers #photo_heading {
+			display: block;
+			float: none;
+			width: 100%;
+			margin: 0px;
+			height: 70px;
+		}
+
+		#schedule {
+			color: #000000;
+			font-size: 12px;
+			margin-bottom: 20px;
+		}	
+		
+			#schedule .date_header {
+				border-bottom: 3px solid #9e0000;
+				padding: 8px 0px;
+				font: bold 13px Arial;
+				color: #9e0000;
+				display: block;
+				text-transform: uppercase;
+				margin-bottom: 2px;
+			}
+				#schedule-list li { 
+					list-style:none;
+					margin-bottom: 3px;
+				}
+				
+			
+				#schedule-list .time { 
+						width: 95px;
+						display: table-cell;
+						text-align: center;
+						padding: 20px 0px 20px 0px;
+						background: #faf9f4;
+						border-right:3px solid white;
+						font-weight: bold;
+				}	
+				#schedule-list li:nth-child(even) .time{ 
+					background: #f4f2e6;
+				}
+				
+				#schedule  li:nth-child(even) .event {
+					background: #f4f2e6;
+				}
+				#schedule-list  .event {
+						padding: 10px 0px 15px 0px;
+						display: table-cell;
+						padding-left: 25px;
+						line-height: 20px;
+						width: 480px;
+						background: #faf9f4;
+					}
+			
+			
+		
+
+			
+	#ataglance {
+		border: 1px solid #e5e4ca;
+		padding: 12px;
+		margin-top: 77px;
+		line-height: 19px;
+	}
+		#ataglance h3 {
+			background: url(../images/h3_glance.gif) no-repeat;
+			height: 40px;
+			text-indent: -99999px;
+		}
+		#ataglance .glance {
+			background: #f2f1e4;
+			padding: 10px 15px;
+		}
+		
+	#about {
+
+		float: left;
+		margin-bottom: 20px;
+	}
+		#about p {
+			line-height: 21px;
+		}
+		
+	#co-promote {
+		border: 1px solid #e5e4ca;
+		padding: 12px;
+		line-height: 19px;
+		margin-bottom: 20px;
+	}
+		#co-promote h3 {
+			background: url(../images/co-pro.gif) no-repeat;
+			height: 40px;
+			text-indent: -99999px;
+		}
+		#co-promote .glance {
+			background: #f2f1e4;
+			padding: 10px 15px;
+		}	
+			#co-promote .glance img {
+				display: block;
+				padding: 0px 18px;
+				margin-bottom: 12px;
+			}
+			
+	#hotels {
+		margin-bottom: 20px;
+	}
+		#hotels p {
+			line-height: 21px;
+			margin-bottom: 20px;
+		}
+		
+	#register {
+		margin-bottom: 20px;
+	}
+		#register #leftlinks {
+			float: left;
+			width: 100px;
+		}
+		#rgister #formholder {
+			float: right;
+			width: 800px;
+		}
+		
+	#copyrights {
+		margin-bottom: 20px;
+	}
+		#copyrights img.cpe {
+			float: left;
+			margin: 3px 20px 20px 0px;
+		}
+		#copyrights p {
+			line-height: 21px;
+			margin-bottom: 20px;
+		}
+		#copyrights ul {
+			padding-left: 30px;
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+			#copyrights ul li {
+				padding: 3px 0px 3px 10px;
+			}
+			
+	#previous {
+	}
+		#previous ul {
+			padding-left: 20px;
+		}
+			#previous ul li {
+				padding: 5px 0px;
+			}
+		
+#footer {
+	background: #990000;
+	color: #ffffff;
+	padding: 10px 20px;
+}
+
+#register_btns {
+	padding-top:20px;
+	float: right;
+	display: block;
+	width: 200px;
+}
+
+
+/** count down style **/
+#countdowntable {
+width: 310px; margin-top: 0px; margin-right: 0px;margin-left: 0px; *margin-left: 0px; border: 1px solid #ffcc00; border-top: none;
+background-color: #ffffff;
+position: relative; /* leave as "relative" to keep timer centered on your page, or change to "absolute" then change the values of the "top" and "left" properties to position the timer */
+top: 0px; /* change to position the timer */
+left: 0px; /* change to position the timer; delete this property and it's value to keep timer centered on page */
+}
+#countdowntable td.caption{background-color: #ffcc00; color:#990000; vertical-align:middle;width:180px;text-align: left; text-transform:uppercase; font-family:Georgia, "Times New Roman", Times, serif; border: opx solid #C6C6C6; border-bottom: none; font-size: 120%}
+#countdowntable td {border: none; padding:0; margin:0; text-align: center; vertical-align:middle;background-color: #ffffff; padding-top:0px; padding-bottom:0px; text-align:center;}
+#countdowntable td.countdownnumbers {
+padding: 0px;
+padding-top:
+width: 65px;
+text-align: center;
+font-family: Arial;
+font-size: 30px;
+font-weight: normal; /* options are normal, bold, bolder, lighter */
+font-style: normal; /* options are normal or italic */
+color: #990000; /* change color using the hexadecimal color codes for HTML */
+margin: 0px;
+}
+#countdowntable td.countdowntitle { /* the styles below will affect the title under the numbers, i.e., ?Days?, ?Hours?, etc. */
+border-style: none;
+padding: 0px 0px 0px 0px;
+width: 73px;
+text-align: left;
+font-family: Georgia;
+font-size: 18px;
+font-weight: normal; /* options are normal, bold, bolder, lighter */
+color: #990000; /* change color using the hexadecimal color codes for HTML */
+} 
+
+
+.button, .button:visited {
+    display: inline-block; 
+    padding: 5px 10px 6px; 
+    color: black; 
+    text-decoration: none;
+	 text-shadow: 1px 1px 0px #efefef;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+	margin-bottom:5px;
+	width:150px;
+	text-align:center;
+	text-transform:uppercase;
+	
+}
+
+    .button:hover                          { background-color: #111; color: black; }
+    .button:active                         { top: 1px; }
+    .small.button, .small.button:visited          { font-size: 11px; padding: ; }
+    .button, .button:visited,
+    .medium.button, .medium.button:visited        { font-size: 13px; font-weight: bold; line-height: 1;  }
+    .large.button, .large.button:visited          { font-size: 14px; padding: 8px 14px 9px; }
+    
+    .green.button, .green.button:visited      { background-color: #91bd09; }
+    .green.button:hover                        { background-color: #749a02; }
+    .blue.button, .blue.button:visited        { background-color: #2daebf; }
+    .blue.button:hover                         { background-color: #007d9a; }
+    .red.button, .red.button:visited          { background-color: #e33100; }
+    .red.button:hover                          { background-color: #872300; }
+    .magenta.button, .magenta.button:visited      { background-color: #a9014b; }
+    .magenta.button:hover                          { background-color: #630030; }
+    .orange.button, .orange.button:visited        { background-color: #ff5c00; }
+    .orange.button:hover                           { background-color: #d45500; }
+    .yellow.button, .yellow.button:visited        { background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,252,234,1)), color-stop(100%,rgba(241,218,54,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C */ }
+    .yellow.button:hover                           { background: #fefcea; /* Old browsers */
+background: -moz-linear-gradient(top, #fefcea 0%, #aa9100 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#aa9100)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fefcea 0%,#aa9100 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fefcea 0%,#aa9100 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #fefcea 0%,#aa9100 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#aa9100',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #fefcea 0%,#aa9100 100%); /* W3C */ }
+
+
+
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: -130px;
+}
+
+#back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #cc0000;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #990000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background: #cc0000 url(../images/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #990000;
+}
+
+
+@media print { 
+	/* ADD PRINT STYLES HERE */
+	.speaker-break { page-break-before:always; page-break-after:always; height:168px; }
+}
+
+
+
+		

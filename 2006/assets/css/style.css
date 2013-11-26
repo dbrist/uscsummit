@@ -1,0 +1,426 @@
+/* USC MARSHALL */
+
+/* BASIC ELEMENTS
+------------------------------------------------------------------------------------- */
+* { margin:0; padding:0; }
+
+html { min-height: 100%; margin-bottom: 1px; }
+
+body { text-align: left; font-size: 13px; font-family: arial, helvetica, sans-serif; color: #333; background: #fff; }
+body.home	{ background: #000; }
+table, th, td, input, textarea, select { font-size: 13px; font-family: arial, helvetica, sans-serif; color: #333; }
+td { vertical-align:top; }
+input, textarea, select { text-align: left; background:#fff; }
+
+a img, :link img, :visited img { border: none; }
+
+a:link { color: #900; text-decoration: underline; }
+a:visited { color: #933; text-decoration: underline; }
+a:hover, a:active { color: #600; text-decoration: none; }
+
+abbr { border-bottom:1px dotted #ccc; cursor:help; }
+
+#skip { display: none; }
+
+#container { width: 990px; }
+
+#header { position: relative; height: 100px; z-index: 50; background: #900; min-width:941px; }
+        #header a:link, #header a:hover, #header a:active, #header a:visited { color: #fff; }
+* html #header { width:expression((document.body.clientWidth > 941) ? "100%" :"941px"); }
+	.sublogo	{ background: #000; color: #900;}
+
+/* NAVIGATION - HOME PAGE
+------------------------------------------------------------------------------------- */
+#h_nav { float: left; width: 203px; height: 305px; background: #FFF; margin: 30px 0 0; padding:0; border-right:18px solid #FFF; }
+#h_nav li { float: left; position: relative; height: 25px; width: 203px; list-style: none; margin:2px 0 0; }
+#h_nav li a { cursor: pointer; position: relative; display: block; height: 25px; width: 203px; text-decoration: none; color: #900; font-size: 13px; }
+#h_nav li strong { position: absolute; top: 0px; left: 0px; display: block; height: 25px; width: 203px; }
+#h_nav li, #h_nav li a, #h_nav li strong { background-image: url(../images/h_nav.gif); }
+#h_nav li li { margin:0; }
+
+#h_nav li.marshallmba, #h_nav li.marshallmba a, #h_nav li.marshallmba a strong	{ background-position: 0px 0px; height: 31px;}
+#h_nav li.admissions, #h_nav li.admissions a, #h_nav li.admissions a strong		{ background-position: 0px -31px; }
+#h_nav li.academicprograms, #h_nav li.academicprograms a, #h_nav li.academicprograms a strong			{ background-position: 0px -56px; }
+#h_nav li.execed, #h_nav li.execed a, #h_nav li.execed a strong		{ background-position: 0px -81px; }
+#h_nav li.faculty-and-research, #h_nav li.faculty-and-research a, #h_nav li.faculty-and-research a strong				{ background-position: 0px -106px; }
+#h_nav li.academicservices, #h_nav li.academicservices a, #h_nav li.academicservices a strong			{ background-position: 0px -131px; }
+#h_nav li.about, #h_nav li.about a, #h_nav li.about a strong					{ background-position: 0px -156px; }
+#h_nav li.news, #h_nav li.news a, #h_nav li.news a strong						{ background-position: 0px -181px; }
+#h_nav li.press, #h_nav li.press a, #h_nav li.press a strong					{ background-position: 0px -206px; }
+#h_nav li.community, #h_nav li.community a, #h_nav li.community a strong		{ background-position: 0px -231px; }
+#h_nav li.giving, #h_nav li.giving a, #h_nav li.giving a strong					{ background-position: 0px -256px; }
+#h_nav li.alumni, #h_nav li.alumni a, #h_nav li.alumni a strong					{ background-position: 0px -281px; }
+#h_nav li.recruiters, #h_nav li.recruiters a, #h_nav li.recruiters a strong		{ background-position: 0px -306px; }
+
+/* HOVER STATE */
+#h_nav li.marshallmba:hover a, #h_nav li.marshallmba:hover a strong, #h_nav li.marshallmba a:hover, #h_nav li.marshallmba a:hover strong	{ background-position: -221px 0px; height: 31px; }
+#h_nav li.admissions:hover a, #h_nav li.admissions:hover a strong, #h_nav li.admissions a:hover, #h_nav li.admissions a:hover strong		{ background-position: -221px -31px; }
+#h_nav li.academicprograms:hover a, #h_nav li.academicprograms:hover a strong, #h_nav li.academicprograms a:hover, #h_nav li.academicprograms a:hover strong				{ background-position: -221px -56px; }
+#h_nav li.execed:hover a, #h_nav li.execed:hover a strong, #h_nav li.execed a:hover, #h_nav li.execed a:hover strong 			{ background-position: -221px -81px; }
+#h_nav li.faculty-and-research:hover a, #h_nav li.faculty-and-research:hover a strong, #h_nav li.faculty-and-research a:hover, #h_nav li.faculty-and-research a:hover strong					{ background-position: -221px -106px; }
+#h_nav li.academicservices:hover a, #h_nav li.academicservices:hover a strong, #h_nav li.academicservices a:hover, #h_nav li.services a:hover strong				{ background-position: -221px -131px; }
+#h_nav li.about:hover a, #h_nav li.about:hover a strong, #h_nav li.about a:hover, #h_nav li.about a:hover strong							{ background-position: -221px -156px; }
+#h_nav li.news:hover a, #h_nav li.news:hover a strong, #h_nav li.news a:hover, #h_nav li.news a:hover strong								{ background-position: -221px -181px; }
+#h_nav li.press:hover a, #h_nav li.press:hover a strong, #h_nav li.press a:hover, #h_nav li.press a:hover strong							{ background-position: -221px -206px; }
+#h_nav li.community:hover a, #h_nav li.community:hover a strong, #h_nav li.community a:hover, #h_nav li.community a:hover strong			{ background-position: -221px -231px; }
+#h_nav li.giving:hover a, #h_nav li.giving:hover a strong, #h_nav li.giving a:hover, #h_nav li.giving a:hover strong						{ background-position: -221px -256px; }
+#h_nav li.alumni:hover a, #h_nav li.alumni:hover a strong, #h_nav li.alumni a:hover, #h_nav li.alumni a:hover strong						{ background-position: -221px -281px; }
+#h_nav li.recruiters:hover a, #h_nav li.recruiters:hover a strong, #h_nav li.recruiters a:hover, #h_nav li.recruiters a:hover strong		{ background-position: -221px -306px; }
+
+/* IF NO DROP DOWNS ARE USED IN THE NAVIGATION YOU CAN REMOVE THE FOLLOWING STYLES DOWN TO THE LINE OF STARS */
+/* DROP DOWNS */
+
+#h_nav li table { margin: 0 -1px -1px; border-collapse: collapse; }
+#h_nav li td { font-size: 12px; }
+#h_nav li:hover, * html #h_nav a:hover { position: relative; z-index: 50; }
+#h_nav li li a { font-size: 12px; text-align: left; }
+
+/* FIRST LEVEL DROP DOWNS */
+#h_nav li ul { display: none; padding:0; margin:0; }
+#h_nav li:hover ul, #h_nav li a:hover ul { display: block; position: absolute; top: 0px; left: 202px; width: 172px; background: #fff; border-top: 1px solid #fc0; z-index: 50;}
+#h_nav li:hover li, #h_nav li a:hover li { height: auto; width: 170px !important; border: 1px solid #fc0; border-width: 0 1px 1px; }
+	#h_nav li:hover li a, #h_nav li a:hover li a { padding: 6px; display: block; width: 158px !important; height: auto; color: #900; background: #fff !important; }
+	#h_nav li:hover li a.arrow, #h_nav li a:hover li a.arrow	{ background: #fff url(../images/arrow.gif) no-repeat 160px 10px !important; }
+	#h_nav li:hover li a.arrow:hover, #h_nav li a:hover li a.arrow:hover	{ background: #eee url(../images/arrow.gif) no-repeat 160px 10px !important; }
+	* html #h_nav li:hover li a, * html #h_nav li a:hover li a { width: 170px !important; w\idth: 158px; }
+	#h_nav li:hover li a:hover, #h_nav li a:hover li a:hover { color: #000; background: #eee !important; }
+
+/* SECOND LEVEL DROP DOWNS, FLYOUTS */
+#h_nav li:hover li ul, #h_nav li a li a ul { visibility: hidden; }
+#h_nav li:hover li:hover ul, #h_nav li a:hover li a:hover ul { visibility: visible; position: absolute; top: -1px; left: 170px; }
+
+/* MAKES THE HOVER 'STICK' IN FIREFOX */
+/* CLASS 'drop' MUST BE ON THE 'href', NOT THE 'li' OR IT WILL NOT WORK */
+#h_nav ul a.drop:hover, #h_nav ul :hover > a.drop{ color: #041527; background: white !important; }
+/**************************************************************************************************************/
+
+/* NAVIGATION - SITE
+------------------------------------------------------------------------------------- */
+#headnav { background:#000; height:25px; bottom:0; left:0; position:absolute; width:100%; }
+* html #headnav { height:26px; }
+#header .floatright { margin: 0 0 0 10px; }
+#nav { position: absolute; bottom: 0; left: 0; width: 941px; height: 25px; background: #000; margin:0; }
+#nav li { float: left; position: relative; height: 25px; list-style: none; font-size:10px; }
+#nav li a { cursor: pointer; position: relative; display: block; height: 25px; text-decoration: none; color: #900; font-size: 11px; }
+#nav li strong { position: absolute; top: 0px; left: 0px; display: block; height: 25px; }
+#nav li, #nav li a, #nav li strong, #nav li div { background-image: url(../images/nav.gif); }
+
+#nav li.admissions, #nav li.admissions a, #nav li.admissions a strong		{ background-position: 0 0px; width: 95px; }
+#nav li.academicprograms, #nav li.academicprograms a, #nav li.academicprograms a strong				{ background-position: -95px 0px; width: 118px; }
+#nav li.execed, #nav li.execed a, #nav li.execed a strong			{ background-position: -213px 0px; width: 120px; }
+#nav li.faculty-and-research, #nav li.faculty-and-research a, #nav li.faculty-and-research a strong				{ background-position: -333px 0px; width: 113px; }
+#nav li.academicservices, #nav li.academicservices a, #nav li.academicservices a strong				{ background-position: -446px 0px; width: 111px; }
+#nav li.about, #nav li.about a, #nav li.about a strong						{ background-position: -557px 0px; width: 96px; }
+#nav li.news, #nav li.news a, #nav li.news a strong							{ background-position: -653px 0px; width: 93px; }
+#nav li.community, #nav li.community a, #nav li.community a strong			{ background-position: -746px 0px; width: 75px; }
+#nav li.giving, #nav li.giving a, #nav li.giving a strong					{ background-position: -821px 0px; width: 50px; }
+#nav li.alumni, #nav li.alumni a, #nav li.alumni a strong					{ background-position: -871px 0px; width: 69px; }
+
+/* HOVER STATE */
+#nav li.admissions:hover a, #nav li.admissions:hover a strong, #nav li.admissions a:hover, #nav li.admissions a:hover strong		{ background-position: 0 -25px; width: 95px; }
+#nav li.academicprograms:hover a, #nav li.academicprograms:hover a strong, #nav li.academicprograms a:hover, #nav li.academicprograms a:hover strong				{ background-position: -95px -25px; width: 118px; }
+#nav li.execed:hover a, #nav li.execed:hover a strong, #nav li.execed a:hover, #nav li.execed a:hover strong 			{ background-position: -213px -25px; width: 120px; }
+#nav li.faculty-and-research:hover a, #nav li.faculty-and-research:hover a strong, #nav li.faculty-and-research a:hover, #nav li.faculty-and-research a:hover strong					{ background-position: -333px -25px; width: 113px; }
+#nav li.academicservices:hover a, #nav li.academicservices:hover a strong, #nav li.academicservices a:hover, #nav li.academicservices a:hover strong				{ background-position: -446px -25px; width: 111px; }
+#nav li.about:hover a, #nav li.about:hover a strong, #nav li.about a:hover, #nav li.about a:hover strong							{ background-position: -557px -25px; width: 96px; }
+#nav li.news:hover a, #nav li.news:hover a strong, #nav li.news a:hover, #nav li.news a:hover strong								{ background-position: -653px -25px; width: 93px; }
+#nav li.community:hover a, #nav li.community:hover a strong, #nav li.community a:hover, #nav li.community a:hover strong			{ background-position: -746px -25px; width: 75px; }
+#nav li.giving:hover a, #nav li.giving:hover a strong, #nav li.giving a:hover, #nav li.giving a:hover strong						{ background-position: -821px -25px; width: 50px; }
+#nav li.alumni:hover a, #nav li.alumni:hover a strong, #nav li.alumni a:hover, #nav li.alumni a:hover strong						{ background-position: -871px -25px; width: 69px; }
+
+/* ON STATE */
+#nav li.admissionson, #nav li.admissionson strong, #nav li.admissionson div		{ background-position: 0 -50px; width: 95px; }
+#nav li.academicprogramson, #nav li.academicprogramson strong, #nav li.academicprogramson div			{ background-position: -95px -50px; width: 118px; }
+#nav li.execedon, #nav li.execedon strong, #nav li.execedon div		{ background-position: -213px -50px; width: 120px; }
+#nav li.faculty-and-researchon, #nav li.faculty-and-researchon strong, #nav li.faculty-and-researchon div				{ background-position: -333px -50px; width: 113px; }
+#nav li.academicserviceson, #nav li.academicserviceson strong, #nav li.academicserviceson div			{ background-position: -446px -50px; width: 111px; }
+#nav li.abouton, #nav li.abouton strong, #nav li.abouton div					{ background-position: -557px -50px; width: 96px; }
+#nav li.newson, #nav li.newson strong, #nav li.newson div						{ background-position: -653px -50px; width: 93px; }
+#nav li.communityon, #nav li.communityon strong, #nav li.communityon div		{ background-position: -746px -50px; width: 75px; }
+#nav li.givingon, #nav li.givingon strong, #nav li.givingon div					{ background-position: -821px -50px; width: 50px; }
+#nav li.alumnion, #nav li.alumnion strong, #nav li.alumnion div					{ background-position: -871px -50px; width: 69px; }
+
+/* IF NO DROP DOWNS ARE USED IN THE NAVIGATION YOU CAN REMOVE THE FOLLOWING STYLES DOWN TO THE LINE OF STARS */
+/* DROP DOWNS */
+
+#nav li table { margin: 0 -1px -1px; border-collapse: collapse; }
+#nav li td { font-size: 12px; }
+#nav li:hover, * html #nav a:hover { position: relative; z-index: 50; }
+#nav li li a { font-size: 12px; text-align: left; }
+
+/* FIRST LEVEL DROP DOWNS */
+#nav li ul { display: none; }
+#nav li:hover ul, #nav li a:hover ul { display: block; position: absolute; top: 25px; left: 0; width: 212px; background: #fff; border-top: 1px solid #fc0; z-index: 50;}
+#nav li.admissions:hover ul, #nav li.admissions a:hover ul { left: 28px;}
+#nav li:hover li, #nav li a:hover li { height: auto; width: 210px !important; border: 1px solid #fc0; border-width: 0 1px 1px; }
+	#nav li:hover li a, #nav li a:hover li a { padding: 6px; display: block; width: 198px !important; height: auto; color: #900; background: #fff !important; }
+	#nav li:hover li a.arrow, #nav li a:hover li a.arrow	{ background: #fff url(../images/arrow.gif) no-repeat 200px 10px !important; }
+	#nav li:hover li a.arrow:hover, #nav li a:hover li a.arrow:hover	{ background: #eee url(../images/arrow.gif) no-repeat 200px 10px !important; }
+	* html #nav li:hover li a, * html #nav li a:hover li a { width: 210px !important; w\idth: 198px; }
+	#nav li:hover li a:hover, #nav li a:hover li a:hover { color: #000; background: #eee !important; }
+
+/* SECOND LEVEL DROP DOWNS, FLYOUTS */
+#nav li:hover li ul, #nav li a li a ul { visibility: hidden; }
+#nav li:hover li:hover ul, #nav li a:hover li a:hover ul { visibility: visible; position: absolute; top: -1px; left: 210px; }
+#nav li.community:hover li:hover ul, #nav li.community a:hover li a:hover ul { visibility: visible; position: absolute; top: -1px; left: -212px; }
+
+/* MAKES THE HOVER 'STICK' IN FIREFOX */
+/* CLASS 'drop' MUST BE ON THE 'href', NOT THE 'li' OR IT WILL NOT WORK */
+#nav ul a.drop:hover, #nav ul :hover > a.drop{ color: #041527; background: white !important; }
+
+/* POSITIONS LAST LIST IN THE NAV */
+#nav li.alumni:hover ul, #nav li.alumni a:hover ul { left: -150px; }
+#nav li.giving:hover ul, #nav li.giving a:hover ul { left: -100px; }
+#nav li.community:hover ul, #nav li.community a:hover ul { left: -25px; }
+
+
+/**************************************************************************************************************/
+
+/* HOME PAGE
+------------------------------------------------------------------------------------- */
+.h_main		{ background: #fff; height: 354px; min-width:921px; }
+* html .h_main { width:expression((document.body.clientWidth > 941) ? "100%" :"941px") }
+.h_flash	{ float: left; width: 699px; height: 354px;}
+.logo_marshall	{ background: #900; }
+
+.h_search	{ float: left; display: inline; width: 170px; margin: 18px 20px 0 26px; color: #ddd; font-size: 11px;}
+	.h_search .input	{ width: 120px; margin-right: 3px; }
+.h_date		{ float: left; width: 70px; margin: 36px 0 0; color: #ddd; font-size: 10px;}
+.h_news		{ float: left; display: inline; width: 634px; margin: 36px 0 0; font-size: 11px; color: #ddd;}
+	.h_news p	{ float: left; display: inline; width: 200px; margin: auto 10px auto auto; line-height:14px; font-size:11px; color:#FFF; }
+	.h_news a:link, .h_news a:visited	{ color: #fff; text-decoration: none;}
+	.h_news a:hover	{ text-decoration: underline;}
+
+
+#footer { clear: both; width: 700px; margin-left: 220px; padding: 50px 0; font-size: 10px; color: #777; text-align: center;}
+	#footer p { border-bottom: 1px solid #777; padding: 0 0 6px; margin: 0 0 6px; text-align:center; font-size:10px; line-height:14px; color:#777; }
+	#footer a	{ color: #777; text-decoration: none;}
+	#footer a:hover	{ text-decoration: underline;}
+	#footer p a	{ color: #900; text-decoration: none;}
+	#footer p a:hover	{ text-decoration: underline;}
+	.home #footer p a	{ color: #fff;}
+
+/* SUB PAGE
+------------------------------------------------------------------------------------- */
+.main	{ background: #fff; min-width:921px; z-index:20; }
+* html .main { width:926px; }
+
+#subnav	{ float: left; display: inline; width: 180px; margin: 40px 20px 0 30px;}
+* html #subnav { width:185px; overflow:hidden; _margin-right:10px; _padding-right:0px; } /* INCREASED SIDEBAR WIDTH FOR IE6 AND OVERFLOW HIDDEN SO IT WILL NOT BREAK */
+	#subnav ul a:visited { text-decoration:none !important; }
+        #subnav ul	{ list-style: none;}
+	#subnav ul li a:link, #subnav li a:visited	{ display: block; zoom:1; padding: 5px 0; text-decoration: none;}
+	#subnav ul li a:hover	{ text-decoration: underline;}
+	#subnav ul li p	{ padding: 5px 0; color: #666; }
+	
+        #subnav ul ul { display:block; padding-left:20px; }
+	#subnav ul li ul	{ font-size:12px; padding-left: 20px; display: block; } /* font-size: 12px; */
+	/* #subnav ul li ul li       { padding-top:0px !important; padding-bottom:0px !important; } */
+	#subnav ul li li a:link, #subnav li li a:visited	{ padding: 2px 0 !important;  }  /* padding: 2px 0; */
+	#subnav ul li li p	{ padding: 2px 0; color: #666; }
+	#subnav ul li li li a:link, #subnav li li li a:visited	{ padding: 2px 0 !important; font-size:12px !important;  }  /* padding: 2px 0; */
+	#subnav ul ul a:link, #subnav ul ul a:visited	{ padding: 2px 0 !important; font-size:12px !important; }  /* padding: 2px 0; */
+			
+	
+	#subnav ul li li ul	{ font-size: 11px; padding: 5px 0 5px 15px; color: #666; border: 1px solid #ddd; border-width: 1px 0;}
+        #bca #subnav ul li li ul { border-width:0 0; border-color:#fff; }
+
+        #subnav ul a { display:block; padding:5px 0;}
+
+.search	{ padding: 20px 0 0; color: #666; font-size: 11px; }
+	.search .input	{ width: 139px; margin-right: 3px; padding:0; color:#666; }
+        .search .btn { padding:0; font-size:11px; letter-spacing:2px; color:#CCC; text-align:center; }
+
+.content	{ float: left; width: 690px; padding: 42px 0 40px; line-height: 20px;}
+* html .content { width: 690px; }
+	/* .content p	{ padding: 0 0 20px;} */
+	.content ul, .content ol	{ padding: 0 25px 20px;}_
+
+/* WIDE PAGE STYLES */
+.wide .content { width:900px; }
+.wide .main { min-width:1141px; }
+.wide #header { min-width:1141px; }
+* html .wide #header {  width:expression((document.body.clientWidth > 1141) ? "100%" :"1141px"); }
+* html .wide .main { width:1141px; }
+
+.tablelist	{ margin: 0 0 20px; border: 1px solid #bbb; border-width: 1px 0 0 1px; }
+	.tablelist th, .tablelist td	{ padding: 4px; background: #e6e6e6; border: 1px solid #bbb; border-width: 0 1px 1px 0; }
+	.tablelist td	{ padding: 4px; background: #fff;}
+	
+.column	{ float: left; width: 320px; display: inline; margin-right: 20px; }
+
+h1	{ color: #900; font-size: 21px; padding: 0 0 10px; }
+h2	{ color: #666; font-size: 19px; font-weight: normal; padding: 0 0 10px;}
+h3	{ color: #666; font-size: 17px; padding: 0 0 10px;}
+h4	{ font-size: 15px; padding: 0 0 10px;}
+
+.input	{ border: 1px solid #777; padding: 2px; }
+.btn	{ background: #900; font-size: 10px; color: #ddd; padding: 3px 4px; border: 0; letter-spacing: 3px;}
+
+hr	{ background: #bbb; color: #bbb; border: 0; height: 1px; margin: 0 0 15px; }
+
+
+.greybg { background: #797979; color:#fff; font-weight: bold; }
+   .greybg a:link { color:#fff; }
+
+.indent {margin-left: 15px; }
+
+/* For verticle red lines between table cells */
+.lftredbrdr { border-left: 1px solid #900; }
+
+/* To simulate the red horizontal lines of varying thickness */
+div .redline1 { background: #900; height: 1px; width: 630px; margin: 0 0 15px; border: 0; }
+div .redline2 { background: #900; height: 2px; width: 630px; margin: 0 0 15px; border: 0; }
+div .redline3 { background: #900; height: 3px; width: 630px; margin: 0 0 15px; border: 0; }
+div .redline4 { background: #900; height: 4px; width: 630px; margin: 0 0 15px; border: 0; }
+
+
+
+/* LINK ICONS
+------------------------------------------------------------------------------------- */
+.audio 		{ padding: 0 15px 0 0; background: url(../images/link_audio.gif) no-repeat 100% 4px; }
+.doc 		{ padding: 0 15px 0 0; background: url(../images/link_worddoc.gif) no-repeat 100% 4px; }
+.excel 		{ padding: 0 15px 0 0; background: url(../images/link_excel.gif) no-repeat 100% 4px; }
+.external 	{ padding: 0 16px 0 0; background: url(../images/link_external.gif) no-repeat 100% 4px; }
+.flash 		{ padding: 0 15px 0 0; background: url(../images/link_flash.gif) no-repeat 100% 4px; }
+.ical		{ padding: 0 15px 0 0; background: url(../images/link_ical.gif) no-repeat 100% 4px; }
+.itunes		{ padding: 0 15px 0 0; background: url(../images/link_itunes.gif) no-repeat 100% 4px; }
+.outlook	{ padding: 0 15px 0 0; background: url(../images/link_outlook.gif) no-repeat 100% 4px; }
+.pdf 		{ padding: 0 14px 0 0; background: url(../images/link_pdf.gif) no-repeat 100% 4px; }
+.podcast	{ padding: 0 15px 0 0; background: url(../images/link_podcast.gif) no-repeat 100% 4px; }
+.popup 		{ padding: 0 16px 0 0; background: url(../images/link_popup.gif) no-repeat 100% 4px; }
+.ppt		{ padding: 0 15px 0 0; background: url(../images/link_powerpoint.gif) no-repeat 100% 4px; }
+.qt			{ padding: 0 15px 0 0; background: url(../images/link_quicktime.gif) no-repeat 100% 4px; }
+.rar		{ padding: 0 16px 0 0; background: url(../images/link_rar.gif) no-repeat 100% 4px; }
+.rp			{ padding: 0 16px 0 0; background: url(../images/link_realplayer.gif) no-repeat 100% 4px; }
+.rss		{ padding: 0 15px 0 0; background: url(../images/link_rss.gif) no-repeat 100% 4px; }
+.txt		{ padding: 0 13px 0 0; background: url(../images/link_text.gif) no-repeat 100% 4px; }
+.video		{ padding: 0 15px 0 0; background: url(../images/link_video.gif) no-repeat 100% 4px; }
+.wmp		{ padding: 0 16px 0 0; background: url(../images/link_wmp.gif) no-repeat 100% 4px; }
+.zip		{ padding: 0 16px 0 0; background: url(../images/link_zip.gif) no-repeat 100% 4px; }
+.twitter		{ padding: 0 15px 0 0; background: url(../images/link_twitter.gif) no-repeat 100% 4px; }
+
+
+/* MISC. CLASSES & IDS
+------------------------------------------------------------------------------------- */
+.hide { display: none; }
+.clear { clear: both; }
+br.clear { line-height: 0px; height: 0; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+/* PLEASE LEAVE BOTH THESE LINES, FIX FOR IE7 */
+.clearfix { display: inline-block; }
+.clearfix { /*\*/display: block;/**/ }
+
+/* ADD THIS CLASS TO AN ELEMENT TO FIX THE IE ITALICS BUG,
+MUST BE THE INNER-MOST BLOCK-LEVEL ELEMENT THAT CONTAINS THE TEXT LIKE p, blockquote OR li
+MAY REQUIRE A MORE DIRECT PATH TO THE ELEMENT */
+* html .italicsfix { /*\*/overflow: hidden; o\verflow: visible; width: 100%; w\idth: auto; he\ight: 1%;/**/ }
+
+.floatleft { float: left; }
+.floatright { float: right; }
+
+img.floatleft { margin: 0 10px 5px 0; position: relative; }
+img.floatright { margin: 0 0 5px 10px; position: relative; }
+
+.alignleft { text-align: left; }
+.alignright { text-align: right; }
+.aligncenter { text-align: center; }
+.aligntop { vertical-align: top; }
+.alignbottom { vertical-align: bottom; }
+#pcms_show { z-index:2000; }
+
+#table1 td, #table2 td { padding:5px; }
+img.bordered { border: 3px solid rgb(204, 204, 204); margin: 4px; }
+
+
+/* CALENDAER VIEW */
+#calendar { padding-bottom: 16px; }
+	#calendar h2 { padding-right:25px;  color: #333; font-size: 20px; font-weight: normal; float: left; }
+	.cal_nav { margin: 2px 0 0 0; padding-right: 11px; font-size: 11px !important; }
+	.cal_nav a.previous { padding: 0 0 0 5px; background: url(../images/arrow_cal_previous.gif) no-repeat 0% 4px; }
+	.cal_nav a.next { padding: 0 5px 0 0; background: url(../images/arrow_cal_next.gif) no-repeat 100% 4px; }
+        .view { float:right; margin-right:450px; font-size:11px; }
+	#calendar_form { padding: 15px 0 17px 0; }
+	#calendar_form .by_cat, #calendar_form .by_month { margin-right: 7px; width: 199px; height: 18px; font: 10px arial, helvetica, sans-serif; border: 1px inset #333; padding:1px }
+	* html #calendar_form .by_cat, * html #calendar_form .by_month { font-size: 13px; }
+	#calendar_form #year { width:50px; }
+	#calendar_form .submit { vertical-align: top; letter-spacing:1px; font-size:11px; }
+
+	#calendar table { table-layout:fixed; margin-top: 8px; clear: both; width: 575px; background: url(../images/bg_calendar.gif) no-repeat 0% 0%; border-bottom: 1px solid #ddd; }
+	#calendar th { padding-left: 10px; height: 37px; vertical-align: middle; text-align: left; font: 12px arial, helvetica, sans-serif; font-weight: bold; }
+	#calendar td { width: 81px; height: 60px; vertical-align: top; font: 11px arial, helvetica, sans-serif; border-bottom: 1px solid #ddd; }
+	#calendar tr.lastrow td { border: none; }
+
+	#calendar .date { margin: 4px 0 0 5px; width: 12px; float: left; display: inline; color: #000; }
+	#calendar td.last .date, #calendar td.next .date { color: #999; }
+	* html #calendar .date { /*\*/margin-right: 3px;/**/ }
+	#calendar .event { margin: 0 0 0 22px; word-wrap:break-word; }
+	* html #calendar .event { /*\*/margin-left: 20px; height: 1%;/**/ }
+	#calendar .event2 { margin: 2px; }
+	* html #calendar .event2 { height:1%; }
+	#calendar td p { padding: 6px 1px 6px 0; font-size: 9px; line-height: 10px; }
+	#calendar .event2 { margin: 2px; }
+	* html #calendar .event2 { height:1%; }
+	
+	#calendar .red { color:#900; }
+	#calendar .blue { color:#006; }
+	#calendar .orange { color:#C60; }
+	#calendar .green { color:#060; }
+
+table.padded td { padding:5px; }
+
+/* Generic Forms */
+#wideform table { width: 600px; }
+.borderedform { padding: 5px; }
+.generic_form_table {}
+.generic_form_table td { padding:0 4px 10px 0; }
+.generic_form_table td span { color:#ff3300; }
+.generic_form_table td input    { margin-right:4px; }
+.generic_form_table .bottomright { padding-top:10px; border-top:1px solid #f6f6f6; }
+
+.generic_form_table .multiSelect { width:250px; margin-right:15px; }
+.generic_form_table .multiSelectButtons { margin-right:10px; }
+.generic_form_table .checkbox { margin-right:4px; }
+
+.generic_form_table .formbttn { cursor:pointer; cursor:hand; }
+td.options { padding:0 20px 10px; }
+
+td.rightcell textarea { width:300px !important; }
+
+.list { padding:2px 4px; border-bottom:1px solid #efefef; border-top:1px solid #FFF; }
+.list.alt { background:#eaeaea; }
+.list img.floatleft { margin:2px 5px 1px 0pt; }
+.events img.floatleft { margin:5px 5px 5px 0; }
+
+/* Lists */
+.content ul.nobull { margin-left:0px; padding-left:0px; list-style:none; margin-right:20px; }
+.content ul.nobull li { margin-left:0px; padding-left:0px; width:280px;  }
+.content ul.nobull li span { display:block; width:280px; margin-bottom:5px; }
+.content ul.nobull li span.arrow { width:20; display:inline; }
+
+/* Twitter */
+#twitter_update_table { margin-left:5px; margin-right:-26px; margin-top:16px; background: url(../images/prime_tweets_small.png) no-repeat 0 0;  }
+#twitter_update_list { width:196px; min-height:200px; font-size:11px; font-weight:normal;  font-family:verdana, sans-serif; }
+#twitter_update_list li { font-size:11px; line-height:16px; }
+#twitter_update_list a, #twitter_update_list a:link, #twitter_update_list a:hover { text-decoration:none;  }
+#twitter_update_list div.item { width:186px; min-height:99px; margin-left:3px; background-color:#eef3d3; }
+#twitter_update_list .post-time { clear:both; display:block; width:138px; height:20px; margin-left:48px; }
+#twitter_update_list li span { width:178px; margin-top:5px; padding:5px 3px 5px 0; margin-left:5px; color:#727171;  }
+#twitter_update_list .visible { font-weight:bold; }
+
+.content ul#twitter_update_list li { width:190px; }
+
+/* BLOG */
+.blog { padding:6px; background:#dae1b1; }
+.blog .inner { padding:12px 12px 2px; background:#eef3d3; }
+.blog h2 { position:relative; margin:0 !important; padding:0 !important; width:290px; height:45px; overflow:hidden; font-size:14px !important;  }
+.blog h2 span { position:absolute; top:0; left:0; width:290px; height:45px; display:block; }
+.blog p { margin:0 0 10px !important; font-size:12px !important;  line-height:17px !important;}
+.blog a { display:block !important; color:#000000 !important; text-decoration:none !important; }
+.blog a:hover { text-decoration:none !important; }
+.blog .continue { margin:15px 0 10px !important; width:100%; text-align:right; font-size:11px !important; }
+.blog .continue a { display:inline !important; font-weight:bold; color:#990000 !important; text-decoration:underline !important; }
+.blog .continue a:hover { text-decoration:none !important; }
+
+#blog-shanghaikid h2, #blog-shanghaikid h2 span { background:url(../images/bg-shanghaikid.gif) no-repeat 0 0; }

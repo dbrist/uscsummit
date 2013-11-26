@@ -1,0 +1,305 @@
+/* -------------------------------------- */
+/* -------  GLOBAL ELEMENTS  ------------ */
+body,h1,h2,h3,h4,h5,h6,form,img,span,div,ul,li,p {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	background: url(images/bg.jpg) top center no-repeat #eae9e2;
+	font: 0.75em Tahoma;
+	text-align: center;
+	color: #131414;
+}
+
+/* general elements */
+a { text-decoration: underline; color: #bd0a0a; }
+a:hover { text-decoration: none; }
+.floatleft { float: left; }
+.block { display: block; }
+.floatright { float: right; }
+
+/* Centers the layout */
+.centered {
+	width: 940px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+#header h1 {
+	width: 600px;
+	height: 75px;
+	text-indent: -100000px;
+	background: url(images/logo.jpg) no-repeat;
+	font-size: 1.8em;
+	float: right;
+}
+
+hr {
+	background: #ffffff;
+	margin: 0px;
+}
+
+#white_content {
+	background: #ffffff;
+	padding: 15px 20px 20px;
+}
+
+.intro_text {
+	display: block;
+	text-align: center;
+	font-size: 1.7em;
+	margin-bottom: 5px;
+}
+h1.intro {
+	font: 3.1em Georgia;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#navigation {
+	background: #990000;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 31px;
+}
+	#navigation ul {
+		display: table;
+	}
+		#navigation ul li {
+			display: table-cell;
+		}
+			#navigation ul li a {
+				display: block;
+				color: #ffffff;
+				padding: 9px 10px;
+				font-size: 1.0em;
+			}
+				#navigation ul li a:hover {
+					background: #ffcc00;
+					color: #990000;
+				}
+
+.date_header {
+	display: block;
+	margin-bottom: 0px;
+}				
+#date_location {
+	margin-bottom: 0px;
+	page-break-after: avoid;
+}
+	#date_location p {
+		font-size: 1.2em;
+		line-height: 1.7em;
+		padding-left: 20px;
+		margin: 0px;
+	}
+
+#photoboard {
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+	
+	#photoboard .heading {
+		display: block;
+		margin-bottom: 10px;
+		
+	}
+	#photoboard div {
+		margin: 0px 5px 15px 5px;
+		height: 150px;
+		float: left;
+		width: 100px;
+	}
+		#photoboard div a {
+			display: block;
+		}
+		#photoboard div img {
+			display: block;
+			border: none;
+			margin-bottom: 3px;
+		}
+		#photoboard div a span {
+			display: block;
+			background: #eae9e2;
+			padding: 7px 0px;
+			text-align: center;
+		}
+			#photoboard div a:hover span {
+				background: #990000;
+				color: #ffffff;
+			}
+			
+	#photoboard #photo_heading {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 0px;
+		height: 70px;
+	}
+	
+
+#ataglance {
+	float: right;
+	width: 270px;
+	border: 1px solid #cccccc;
+}
+	#ataglance .padding {
+		padding: 15px;
+	}
+		#ataglance .title {
+			background: #ffcc00;
+			padding: 8px 14px;
+			display: block;
+			font: bold 1.2em Tahoma;
+		}
+		#ataglance .info {
+			background: #eae9e2;
+			padding: 15px;
+			line-height: 1.7em;
+		}
+	
+.schedule_header {
+	display: block;
+	margin-bottom: 10px;
+	
+	
+}
+
+#schedule {
+	padding: 0px 0px;
+	width: 580px;
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 20px;
+	page-break-after: always;
+	
+}
+	#schedule .date {
+		border-bottom: 2px solid #990000;
+		padding: 10px 15px;
+		color: #990000;
+		margin-bottom: 10px;
+		font-weight: bold;
+		font-size: 1.4em;
+		display: block;
+	}
+	#schedule .time {
+		float: left;
+		display: block;
+		padding: 10px;
+		width: 80px;
+		background: #eae9e2;
+		vertical-align: top;
+		font-size: 1.2em;
+		margin-top: 8px;
+		text-align: center;
+		clear: left;
+	}
+	#schedule .event {
+		float: left;
+		padding: 10px;
+		font-size: 1.2em;
+		line-height: 1.7em;
+		margin-left: 20px;
+		width: 400px;
+	}
+	
+.about_header {
+	
+	clear: both;
+}
+#about {
+	margin-left: 10px;
+	clear: both;
+	float: left;
+	width: 580px;
+	
+}
+	#about p {
+		line-height: 1.8em;
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+	
+#co_promote {
+	float: right;
+	width: 270px;
+	border: 1px solid #cccccc;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	#co_promote img {
+		display: block;
+		margin-bottom: 6px;
+	}
+
+	#co_promote .padding {
+		padding: 15px;
+	}
+	#co_promote .title {
+		background: #ffcc00;
+		padding: 8px 14px;
+		display: block;
+		font: bold 1.2em Tahoma;
+	}
+	#co_promote .info {
+		background: #eae9e2;
+		padding: 15px;
+		line-height: 1.7em;
+	}
+	
+#hotels {
+	clear: left;
+	padding: 20px 0px;
+	width: 580px;
+}
+	#hotels p {
+		margin-bottom: 20px;
+		padding: 0px 10px;
+		line-height: 1.8em;
+	}
+	
+.backtotop {
+	padding: 10px 0px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-right: 10px;
+	text-align: right;
+}
+#bio {
+	padding-top: 10px;
+}
+#bio p {
+	line-height: 1.8em;
+	margin-bottom: 17px;
+}
+#bio h2 {
+	font: 1.8em Arial;
+	color: #990000;
+	margin-bottom: 10px;
+}
+
+#cpe {
+	line-height: 1.8em;
+	padding-top: 20px;
+}
+	#cpe img {
+		display: block;
+		float: left;
+		margin: 3px 15px 15px 0px;
+	}

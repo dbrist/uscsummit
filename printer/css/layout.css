@@ -1,0 +1,406 @@
+/* -------------------------------------- */
+/* -------  GLOBAL ELEMENTS  ------------ */
+body,h1,h2,h3,h4,h5,h6,form,img,span,div,ul,li,p {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	background: url(images/page_bg.jpg) top center #edead6 no-repeat;
+	font: 13px Arial;
+	text-align: center;
+	color: #333333;
+}
+
+/* general elements */
+a { text-decoration: underline; color: #990000; outline: none; }
+a:hover { text-decoration: none; }
+.floatleft { float: left; }
+.block { display: block; }
+.blue { color: #0099cc; }
+.orange { color: #ec870e; }
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.centered {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+.white {
+	background: #ffffff;
+}
+
+a.to_top {
+	display: block;
+	background: #d20000;
+	position: absolute;
+	margin-left: -47px;
+	margin-top: -3px;
+	height: 35px;
+	width: 30px;
+	background: url(images/to_top.gif) no-repeat;
+	text-indent: -99999px;
+}
+	a:hover.to_top {
+		background: url(images/to_top.gif) bottom left no-repeat;
+	}
+
+h2 {
+	color: #990000;
+	font: 26px Georgia;
+	margin-bottom: 15px;
+}
+	h2 span {
+		font-size: 15px;
+		color: #333333;
+	}
+
+#header {
+	margin-top: 36px;
+	height: 150px;
+	background: url(images/header_bg.jpg);
+}
+	#header img {
+		display: block;
+		float: left;
+	}
+	#header a#logo {
+		float: left;
+		outline: none;
+		width: 641px;
+		height: 111px;
+	}
+	#header a#register_now {
+		float: right;
+		display: block;
+		height: 102px;
+		width: 221px;
+		background: url(images/register_now.jpg) no-repeat;
+		margin-top: 9px;
+		text-indent: -99999px;
+	}
+		#header a:hover#register_now {
+			background: url(images/register_now.jpg) no-repeat bottom right;
+		}
+		
+	ul#nav {
+		display: table;
+		clear: both;
+		width: 100%;
+	}
+		ul#nav li {
+			display: table-cell;
+			background: url(images/nav_sep.gif) top right no-repeat;
+			height: 39px;
+			padding-right: 2px;
+		}
+			ul#nav li a {
+				display: block;
+				color: #ffffff;
+				padding: 11px 20px;
+				background: url(images/nav_bg.gif) repeat-x;
+				text-align: center;
+				text-decoration: none;
+			}
+				ul#nav li a:hover {
+					background: url(images/nav_bg.gif) repeat-x bottom;
+				}
+
+	#content {
+		background: #ffffff;
+		padding: 20px;
+	}
+	
+	#banner {
+		width: 589px;
+		float: left;
+	}
+	
+	#date {
+		background: url(images/box_bg.gif) no-repeat;
+		float: right;
+		width: 298px;
+		height: 240px;
+	}
+		#date .padding {
+			padding: 25px 20px;
+		}
+		#date .date_head {
+			font: 20px Georgia;
+			color: #990000;
+			display: block;
+			margin-bottom: 10px;
+		}
+		#date p {
+			line-height: 20px;
+		}
+		#date a.gweek {
+			background: url(images/gWeek.gif) no-repeat top center;
+			display: block;
+			height: 37px;
+			text-indent: -99999px;
+			margin-top: 20px;
+		}
+		#date a.directions {
+			background: url(images/icon_map.png) no-repeat 0px 5px;
+			display: block;
+			padding: 5px 0px 5px 32px;
+			font-size: 14px;
+			text-decoration: underline;
+			margin: 5px 0px;
+		}
+			#date a:hover.directions {
+				text-decoration: none;
+			}
+			
+	#speakers {
+		padding: 20px 20px;
+		font-size: 12px;
+	}
+		#speakers div {
+			margin: 0px 5px 15px 5px;
+			height: 168px;
+			float: left;
+			width: 100px;
+		}
+			#speakers div a {
+				display: block;
+				text-decoration: none;
+			}
+			#speakers div img {
+				display: block;
+				border: none;
+				margin-bottom: 3px;
+			}
+			#speakers div a span {
+				display: block;
+				background: url(images/speaker_title.gif) repeat-x top left #eae9e2;
+				padding: 7px 0px 6px 0px;
+				text-align: center;
+				margin-bottom: 1px;
+			}
+				#speakers div a:hover span {
+					background: url(images/speaker_title.gif) repeat-x bottom left #eae9e2;
+					color: #ffffff;
+				}
+				#speakers div a strong.invited {
+					display: block;
+					height: 17px;
+					background: url(images/i_invited.gif) no-repeat;
+					font-size: 10px;
+					text-indent: -10000px;
+				}
+				#speakers div a strong.confirmed {
+					display: block;
+					height: 17px;
+					background: url(images/i_confirmed.gif) no-repeat;
+					font-size: 10px;
+					text-indent: -10000px;
+				}
+				
+		#speakers #photo_heading {
+			display: block;
+			float: none;
+			width: 100%;
+			margin: 0px;
+			height: 70px;
+		}
+
+		#schedule {
+			padding: 20px 0px 0px 20px;
+			width: 568px;
+			color: #000000;
+			float: left;
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+			#schedule .date_header {
+				border-bottom: 3px solid #9e0000;
+				padding: 8px 0px;
+				font: bold 13px Arial;
+				color: #9e0000;
+				display: block;
+				text-transform: uppercase;
+				margin-bottom: 2px;
+			}
+			#schedule .event_block {
+				padding: 0px 0px;
+				margin-bottom: 3px;
+			}
+				#schedule .event_block .time {
+					float: left;
+					width: 95px;
+					display: block;
+					text-align: center;
+					padding: 20px 0px 20px 0px;
+					background: url(images/schedule_odd_time.gif) no-repeat;
+					font-weight: bold;
+				}
+					#schedule .even .time {
+						background: url(images/schedule_even_time.gif) no-repeat;
+					}
+				#schedule .event_block .event {
+					padding: 10px 0px 15px 0px;
+					float: left;
+					padding-left: 25px;
+					line-height: 20px;
+					width: 420px;
+				}
+			#schedule .odd {
+				background: url(images/schedule_odd.gif) repeat-y;
+			}
+			#schedule .even {
+				background: url(images/schedule_even.gif) repeat-y;
+			}
+			
+	#ataglance {
+		float: right;
+		width: 273px;
+		border: 1px solid #e5e4ca;
+		padding: 12px;
+		margin-top: 94px;
+		line-height: 19px;
+	}
+		#ataglance h3 {
+			background: url(images/h3_glance.gif) no-repeat;
+			height: 40px;
+			text-indent: -99999px;
+		}
+		#ataglance .glance {
+			background: #f2f1e4;
+			padding: 10px 15px;
+		}
+		
+	#about {
+		padding-left: 20px;
+		width: 568px;
+		float: left;
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+		#about p {
+			line-height: 21px;
+		}
+		
+	#co-promote {
+		float: right;
+		width: 273px;
+		border: 1px solid #e5e4ca;
+		padding: 12px;
+		line-height: 19px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+		#co-promote h3 {
+			background: url(images/co-pro.gif) no-repeat;
+			height: 40px;
+			text-indent: -99999px;
+		}
+		#co-promote .glance {
+			background: #f2f1e4;
+			padding: 10px 15px;
+		}	
+			#co-promote .glance img {
+				display: block;
+				padding: 0px 18px;
+				margin-bottom: 12px;
+			}
+			
+	#hotels {
+		padding: 20px 0px 0px 20px;
+		width: 568px;
+		margin-bottom: 20px;
+	}
+		#hotels p {
+			line-height: 21px;
+			margin-bottom: 20px;
+		}
+		
+	#register {
+		padding: 20px 0px 0px 20px;
+		margin-bottom: 20px;
+	}
+		#register #leftlinks {
+			float: left;
+			width: 100px;
+		}
+		#rgister #formholder {
+			float: right;
+			width: 800px;
+		}
+		
+	#copyrights {
+		padding: 20px 20px 20px 20px;
+		margin-bottom: 20px;
+	}
+		#copyrights img.cpe {
+			float: left;
+			margin: 3px 20px 20px 0px;
+		}
+		#copyrights p {
+			line-height: 21px;
+			margin-bottom: 20px;
+		}
+		#copyrights ul {
+			padding-left: 30px;
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+			#copyrights ul li {
+				padding: 3px 0px 3px 10px;
+			}
+			
+	#previous {
+		padding: 20px 20px 20px 20px;
+	}
+		#previous ul {
+			padding-left: 20px;
+		}
+			#previous ul li {
+				padding: 5px 0px;
+			}
+		
+#footer {
+	background: #990000;
+	color: #ffffff;
+	padding: 10px 20px;
+}
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; }
+  a[href]:after { content:""; }
+  abbr[title]:after { content:""; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{  }
+
+  .noprint { display:none !important; }
+  div.label { display:block; page-break-before: avoid; page-break-after: avoid; overflow:visible;}
+
+}
+
+
+		

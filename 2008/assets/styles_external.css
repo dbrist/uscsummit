@@ -1,0 +1,14 @@
+/* CSS Sonny */
+
+.tdHead { color: #333; font-weight: bold; background-color: #E6E6E6; padding-left: 10px; }
+.tdGrey { background-color: #E6E6E6; }
+.td_undergradCal {font-style: normal;font-weight: bold;color: #000000; padding:4px; background-color:#E5E5E5;}
+
+p.subBold {font:bold 13pt arial;}
+
+p.top { text-align: right; font-size: 8pt; }
+
+table td.tdRed { color: #FFFFFF; font-weight: bold; background-color: #990000; padding:2px 2px 2px 10px; }
+  table td.tdRed h3 { color: #fff; }
+
+.redline { color:#E6E6E6; }

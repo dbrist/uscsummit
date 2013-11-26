@@ -1,0 +1,6 @@
+Options +FollowSymLinks 
+RewriteEngine on
+Redirect 301 /1 http://www.marshall.usc.edu/execed/programs/leadership/corporate-governance-summit-2006.htm
+Redirect 301 /2 http://www.marshall.usc.edu/execed/programs/leadership/usc-corporate-governance-summit-2007.htm
+Redirect 301 /3 http://www.marshall.usc.edu/execed/programs/leadership/corporate-governance-summit-2008.htm
+Redirect 301 /4 http://www.marshall.usc.edu/execed/programs/leadership/corporate-governance-summit-2009.htm

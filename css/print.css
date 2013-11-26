@@ -1,0 +1,7 @@
+body { background-color: red !important; }
+p { display: inline; }
+#header1 { display:none; }
+#print_header { display: block; }
+#topbanner1 { display: none; }
+#main-slider { display: none; }
+#sponsorList h2 { display: none; }
